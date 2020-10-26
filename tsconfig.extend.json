@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "paths": {
+      "@components/*": [
+        "components/*"
+      ],
+      "@libs/*": [
+        "libs/*"
+      ],
+      "@pages/*": [
+        "pages/*"
+      ]
+    }
+  }
+}

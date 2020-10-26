@@ -1,0 +1,20 @@
+{
+  "extends": ["tslint:latest", "tslint-react", "tslint-config-prettier"],
+  "rules": {
+    // override tslint-react rules here
+    "jsx-wrap-multiline": false,
+    "quotemark": [true, "single", "jsx-double"],
+    "no-implicit-dependencies": [true, "dev"],
+    "trailing-comma": false,
+    "react/self-closing-comp": [
+      "error",
+      {
+        "component": true,
+        "html": true
+      }
+    ],
+    "no-submodule-imports": false,
+    "object-literal-sort-keys": false,
+    "jsx-boolean-value": false
+  }
+}

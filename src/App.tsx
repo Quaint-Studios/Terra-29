@@ -1,15 +1,10 @@
 import React from 'react';
-import logo from './logo.svg';
+import AppRouter from './libs/core/routes/AppRouter';
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>Website in progress... [<a href="https://github.com/Quaint-Studios/Reia">GitHub repository</a>]</p>
-      </header>
-    </div>
+    <>
+      <AppRouter />
+    </>
   );
 }
-
-export default App;
