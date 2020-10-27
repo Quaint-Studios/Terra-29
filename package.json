@@ -1,73 +1,31 @@
 {
-  "name": "reia-gh-pages",
-  "version": "0.1.0",
-  "description": "The GitHub page for Reia's repository.",
-  "main": "src/index.tsx",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Quaint-Studios/Reia.git"
+  "name": "blog-starter-typescript",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start",
+    "typecheck": "tsc"
   },
-  "author": {
-    "name": "Kristopher Ali",
-    "email": "kristopher.ali.dev@gmail.com",
-    "url": "https://makosai.com"
-  },
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/Quaint-Studios/Reia/issues"
-  },
-  "homepage": "https://wiki.playreia.com",
-  "private": true,
   "dependencies": {
-    "@material-ui/core": "^4.11.0",
-    "@material-ui/icons": "^4.9.1",
-    "clsx": "^1.1.1",
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1",
-    "react-helmet": "^6.1.0",
-    "react-router-dom": "^5.2.0",
-    "web-vitals": "^0.2.4"
+    "classnames": "2.2.6",
+    "date-fns": "2.10.0",
+    "gray-matter": "4.0.2",
+    "next": "latest",
+    "react": "^16.13.0",
+    "react-dom": "^16.13.0",
+    "remark": "11.0.2",
+    "remark-html": "10.0.0",
+    "typescript": "^3.9.2"
   },
   "devDependencies": {
-    "@testing-library/jest-dom": "^5.11.4",
-    "@testing-library/react": "^11.1.0",
-    "@testing-library/user-event": "^12.1.10",
-    "@types/jest": "^26.0.15",
-    "@types/node": "^12.0.0",
-    "@types/react": "^16.9.53",
+    "@types/classnames": "^2.2.10",
+    "@types/jest": "^25.2.2",
+    "@types/node": "^14.0.1",
+    "@types/react": "^16.9.35",
     "@types/react-dom": "^16.9.8",
-    "@types/react-helmet": "^6.1.0",
-    "@types/react-router-dom": "^5.1.6",
-    "eslint-webpack-plugin": "^2.1.0",
-    "gh-pages": "^3.1.0",
-    "react-scripts": "4.0.0",
-    "tslint-config-prettier": "^1.18.0",
-    "typescript": "^4.0.3"
+    "postcss-preset-env": "^6.7.0",
+    "tailwindcss": "^1.4.0"
   },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "predeploy": "yarn build",
-    "deploy": "gh-pages -d build"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  }
+  "license": "MIT"
 }
