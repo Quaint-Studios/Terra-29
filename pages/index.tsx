@@ -3,7 +3,7 @@ import MoreStories from '../components/more-stories';
 import HeroPost from '../components/hero-post';
 import Intro from '../components/intro';
 import Layout from '../components/layout';
-import { getAllPosts } from '../lib/api';
+import { getAllContent, getAllPosts } from '../lib/api';
 import Head from 'next/head';
 import { CMS_NAME } from '../lib/constants';
 import Post from '../types/post';
@@ -52,7 +52,15 @@ export const getStaticProps = async () => {
     'excerpt'
   ]);
 
-  console.log(allPosts);
+  const allContent = getAllContent([
+    'slug',
+    'title',
+    'date',
+    'coverImage',
+    'excerpt',
+    'index',
+    'link'
+  ]);
 
   return {
     props: { allPosts }
