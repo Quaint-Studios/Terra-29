@@ -5,6 +5,7 @@ type ContentType = {
   coverImage: string;
   excerpt: string;
   index?: boolean;
+  link?: boolean;
   content: string;
 };
 
